@@ -35,10 +35,7 @@ class DoublyLinkedList {
       this.tail = newNode;
       this.length++;
     }else{
-      let node = this.head;
-      while(node.next != null){
-        node = node.next;
-      }
+      let node = this.tail;
       node.next = newNode;
       newNode.prev = node;
       this.tail = newNode;
